@@ -1,0 +1,108 @@
+.banner{
+    background: var(--azul-degrade);
+    text-align: center;
+    padding: 2.5em 2em;
+}
+
+.banner__titulo{
+    color: var(--branco);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.banner__texto{
+    color: var(--branco);
+    font-weight: 500;
+    margin: 1em 0;
+}
+
+
+.banner__pesquisa{
+    background-color: transparent;
+    border: 1px solid var(--branco);
+    border-radius: 24px;
+    padding: 1em;
+    width: 100%;
+    color: var(--branco);
+}
+
+.banner__pesquisa::placeholder{
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--branco);
+    align-items: center;
+    text-align: center;
+    background-image: url(../assents/Pesquisa.svg);
+    background-repeat: no-repeat;
+    background-position: 1em;
+}
+
+
+                                     /* banner topicos abaixo*/
+
+.recentes {
+    padding: 1.5em 0;
+}
+
+.recentes-titulo {
+    color: var(--branco);
+    font-weight: 300;
+    margin-bottom: 2em;
+}
+
+.recentes-topicos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+}
+
+.recentes-item {
+    font-size: 14px;
+    font-weight: 700;
+    padding: 1em 1.5em;
+    background-color: var(--laranja);
+    color: var(--branco);
+    text-decoration: none;
+}
+
+@media screen and (min-width: 1024px){
+
+    .recentes-titulo {
+        color: var(--branco);
+        font-weight: 300;
+        margin-bottom: 2em;
+        font-size: 26px;
+    }
+
+    .recentes-item {
+        font-size: 26px;
+        font-weight: 700;
+        padding: 1em 1.5em;
+        background-color: var(--laranja);
+        color: var(--branco);
+        text-decoration: none;
+
+    }
+
+}
+
+@media screen and (min-width:1728px){
+    
+    .banner{
+        padding: 4em;
+    }
+
+    .banner__pesquisa{
+        width: 40%;
+    }
+}
+
+@media screen and (min-width:1728px) {
+
+    .banner{
+        padding: 3em 20vw 3em 20vw;
+
+    }
+}

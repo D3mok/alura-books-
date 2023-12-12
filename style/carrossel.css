@@ -1,0 +1,146 @@
+.carrossel__titulo{
+    background-color: var(--branco);
+    padding: 1em 0 0.5em 0;
+    text-align: center;
+    color: var(--laranja);
+    font-size: 18px;
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+}
+
+.swiper-slide img{
+    width: 100%;
+}
+
+ .swiper-button-prev::after,
+.swiper-button-next::after{
+    display: none;
+} 
+
+.swiper-pagination{
+    position: initial !important;
+    margin: .5em 0;
+}
+
+.card{
+    margin: 1em;
+    padding: 1em;
+    background: var(--branco);
+    border: 2px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.card__conteudo{
+    padding: 0 1em;
+}
+
+.card__descrissao{
+    display: flex;
+}
+
+
+.card__subtitulo{
+    margin: 0.5em 0;
+}
+
+
+.card__titulo{
+    color: var(--laranja);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.card__subtitulo{
+    color: var(--preto);
+    font-family: var(--fonte-principal);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.card__paragrafo{
+    font-family: var(--fonte-principal);
+    font-size: 18px;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.card__links{
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0;
+}
+
+.botoes{
+    display: flex;
+}
+
+.card__saiba__mais__texto{
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: 700;
+    border: 1px;
+    background-color: var(--laranja);
+    padding: 1em 2.2em;
+}
+
+.estrelinhas{
+    margin: 0.5em 0;
+}
+
+
+
+/* otimizacao para tebletes media 1024px */
+
+@media screen and (min-width: 1024px){
+    
+
+    .swiper-pagination{
+        margin: 2em 0 2em 0;
+    }
+
+   .swiper{
+    width: 50%;
+   }
+
+
+
+   .swiper-button-prev::after,
+   .swiper-button-next::after{
+       display: block;
+   }
+
+   .card{
+    width: 50%;
+    margin: 2em auto;
+   }
+}
+
+@media screen and (min-width:1728px){
+
+    .carrossel__titulo{
+        font-size: 32px;
+        padding: 1em;
+    }
+
+
+    .contaider__carrossel{
+        display: flex;
+        margin: 2em 15vw 2em 15vw;
+        align-items: center;
+    }
+
+    .card{
+        margin:3em 0 0 0 ;
+        width: 60%;
+        transform: scale(0.8);
+    }
+
+    .card__titulo{
+        font-size: 32px;
+    }
+
+}
